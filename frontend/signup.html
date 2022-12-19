@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="./signup-login/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" defer></script>
+    <script src="./admin/script.js" defer></script>
+</head>
+<body>
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <form action="" onsubmit="signup(event)" class="form-signup">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" placeholder="Enter your name" class="form-input" id="name"  autocomplete="on" required>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email" class="form-input" id="email" autocomplete="on" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" placeholder="Enter your phone no" class="form-input" id="phone" autocomplete="on" required>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter your password" class="form-input" id="password" autocomplete="on" required>
+            <button type="submit" class="signup-btn" id="signup-btn">Sign Up</button>
+        </form>
+    </div>
+    <p>Already have an account? <a href="login.html">Login Here</a></p>
+</body>
+</html>

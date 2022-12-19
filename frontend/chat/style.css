@@ -1,0 +1,130 @@
+
+body{
+    /* box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+} 
+
+/******************Top section*******************/
+#top{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+#logout-btn{
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Poppons', sans-serif;
+}
+/**************************************************/
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+h1, h2{
+    margin: auto;
+    width:fit-content;
+}
+
+select{
+    outline: none;
+    border: none;
+}
+
+.group-list-container, .user-list-container, .group-chat-container{
+    width: 500px;
+    background: #0483b5;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    min-height: 400px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.group-list-container{
+    width: 400px;
+}
+ 
+.user-list-container{
+    width: 400px;
+}
+
+.message-container{
+    width: 80%;
+    max-width: 1200px;
+    height: 40vh;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.message-container div{
+    background-color: #ccc;
+    padding: 5px;
+    width: 30%;
+    border-radius: 0 15px 15px 0;
+}
+
+.message-container div:nth-child(2n){
+    background-color: #fff;
+    width: 30%;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 15px 0 0 15px;
+}
+
+.send-container{
+    background: skyblue;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.message-input{
+    padding: 10px;
+    flex-grow: 1;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    outline: none;
+}
+
+.send-btn{
+    background: #008400;
+    border: none;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+
+
+/*****user and group list*********/
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*************media query*********/
+@media only screen and (max-width:1000px) {
+    main{
+        flex-direction: column;
+    }
+}
